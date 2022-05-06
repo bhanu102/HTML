@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript object</title>
+</head>
+
+<body>
+    <p id="demo">To get your college name click on below button:</p><br>
+    <button type="button" onclick="function1()">click here</button>
+    <script type="text/javascript">
+        function function1() {
+            var school = {
+                firstname: "saveetha",
+                middlename: "school of",
+                lastname: "engineering",
+                fullschoolname: function()
+                {
+                    return this.firstname+" "+this.middlename+" "+this.lastname;
+                }
+            }
+        document.getElementById("demo").innerHTML=school.fullschoolname()
+        }
+    </script>
+</body>
+</html>
